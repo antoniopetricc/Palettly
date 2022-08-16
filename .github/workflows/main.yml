@@ -30,7 +30,6 @@ jobs:
       - name: macOS Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
+          token: ${{ secrets.TOKEN }}
           files: build/macos/Build/Products/Release/Palettly-${{github.ref_name}}.zip
