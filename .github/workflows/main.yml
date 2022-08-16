@@ -1,7 +1,5 @@
-name: Flutter action
-uses: subosito/flutter-action@v2.6.1
-
-on: push
+- name: Flutter action
+  uses: subosito/flutter-action@v2.6.1
 
 jobs:
  build:
