@@ -8,11 +8,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: subosito/flutter-action@v1
+      - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
           flutter-version: '3.0.5'
-          architecture: arm64
+          architecture: x64
       - name: Install project dependencies
         run: flutter pub get
       - name: Generate intermediates
